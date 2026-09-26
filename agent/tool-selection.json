@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "enabledTools": [
+    "read",
+    "bash",
+    "write",
+    "replace",
+    "insert",
+    "anchor_grep",
+    "undo_last_change",
+    "push-task",
+    "ask_user_question",
+    "search_tools",
+    "search",
+    "docs_search",
+    "web_fetch",
+    "mcp",
+    "mcpScript",
+    "ctx_expand",
+    "ctx_reduce",
+    "todowrite",
+    "ssh_bash",
+    "ssh_edit",
+    "ssh_write"
+  ]
+}

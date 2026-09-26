@@ -1,0 +1,30 @@
+{
+  "theme": "wallpaper-dark",
+  "packages": [
+    "npm:pi-supergsd@0.2.10",
+    "npm:@juicesharp/rpiv-ask-user-question@2.11.0",
+    "npm:@juicesharp/rpiv-i18n@2.11.0",
+    "git:github.com/justhil/pi-search@7a0be1354f07567da185765e19c4c9e90132b464",
+    "npm:pi-token-stats@0.1.1",
+    "npm:pi-mcp-adapter@2.37.0",
+    "npm:@ogulcancelik/pi-ssh-tools@0.1.6",
+    "npm:pi-hashline-edit-pro@4.4.1",
+    "npm:@cortexkit/pi-magic-context@0.43.1"
+  ],
+  "defaultThinkingLevel": "xhigh",
+  "tuiMode": "regular",
+  "fullscreenScrollbar": "auto",
+  "retry": {
+    "enabled": true,
+    "maxRetries": 6,
+    "baseDelayMs": 5000,
+    "provider": {
+      "maxRetries": 0,
+      "maxRetryDelayMs": 300000
+    }
+  },
+  "hideThinkingBlock": false,
+  "compaction": {
+    "enabled": true
+  }
+}

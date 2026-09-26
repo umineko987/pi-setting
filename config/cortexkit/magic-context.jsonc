@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cortexkit/magic-context/master/assets/magic-context.schema.json",
+  "enabled": true,
+  "compaction": {
+    "enabled": true
+  },
+  "historian": {
+    "pi": {
+      "thinking_level": "high"
+    }
+  },
+  "memory": {
+    "enabled": false,
+    "auto_promote": false,
+    "auto_search": {
+      "enabled": false
+    },
+    "git_commit_indexing": {
+      "enabled": false
+    }
+  },
+  "dreamer": {
+    "disable": true,
+    "inject_docs": false,
+    "tasks": {
+      "review-user-memories": {
+        "schedule": ""
+      },
+      "promote-primers": {
+        "schedule": ""
+      }
+    }
+  },
+  "prompt_surface": {
+    "guidance_override_path": "magic-context-compression-only.md"
+  },
+  "embedding": {
+    "provider": "off"
+  },
+  "sidekick": {
+    "disable": true
+  }
+}

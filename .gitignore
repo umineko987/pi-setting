@@ -1,0 +1,48 @@
+# Installed dependencies, package checkouts and local tools
+node_modules/
+/agent/npm/
+/agent/git/
+/agent/bin/
+/agent/fff/
+
+# Credentials and private provider configuration
+.env
+.env.*
+!.env.example
+auth.json
+models.json
+models-store.json
+*api-key*
+*.pem
+*.key
+.ssh/
+mcp-oauth/
+mcp-oauth-encrypted/
+tokens.json
+/config/pi-search/config.json
+/config/mcp/mcp.json
+/agent/mcp.json
+
+# Sessions, extension databases, logs and caches
+sessions/
+logs/
+*.log
+*.jsonl
+*.sqlite*
+*.db*
+.cache/
+context7-cache/
+mcp-cache.json
+mcp-npx-cache.json
+mcp-onboarding.json
+mcp-traces/
+.playwright-mcp/
+.cortexkit/
+.pi/
+
+# Backups and editor/system files
+*.bak
+*.bak.*
+*~
+*.tmp
+.DS_Store
