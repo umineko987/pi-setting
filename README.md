@@ -2,7 +2,7 @@
 
 记录我日常使用的 Pi 编程工作流：插件组合、工具选择、界面习惯，以及上下文管理配置。
 
-这套组合主要围绕代码定位与修改、外部资料检索和长会话展开：陌生代码库优先用 fast-context 做语义定位，精确文本搜索使用 `rg` / `anchor_grep`；文件修改使用行锚点工具；资料查询交给搜索插件，需要浏览器交互时使用 Playwright。Magic Context 负责当前会话的上下文压缩与恢复，不承担跨会话记忆。
+这套组合主要围绕代码定位与修改、外部资料检索和长会话展开：陌生代码库优先用 fast-context 做语义定位，精确文本搜索使用 `rg` / `anchor_grep`；文件修改使用行锚点工具；网络搜索、网页提取和研究汇总由 Parallel 提供，需要浏览器交互时使用 Playwright。Magic Context 负责当前会话的上下文压缩与恢复，不承担跨会话记忆。
 
 ## 配置特点
 
@@ -20,7 +20,7 @@
 | `pi-supergsd` | `0.2.10` | 提供开发工作流工具与 skills |
 | `@juicesharp/rpiv-ask-user-question` | `2.11.0` | 通过选项、预览等方式向用户提出结构化问题 |
 | `@juicesharp/rpiv-i18n` | `2.11.0` | 中文界面 |
-| [`pi-search`](https://github.com/justhil/pi-search) | `7a0be135` | 网络搜索、文档检索和网页抓取 |
+| [`@parallel-web/pi-extension`](https://github.com/parallel-web/parallel-npm-packages/tree/main/packages/pi-extension) | `1.3.0` | `web_search` 搜索来源，`web_fetch` 提取网页，`web_research` 汇总研究并提供来源 |
 | `pi-token-stats` | `0.1.1` | Token 用量统计 |
 | `pi-mcp-adapter` | `2.37.0` | 接入 MCP 服务，发现和调用外部工具 |
 | `@ogulcancelik/pi-ssh-tools` | `0.1.6` | 通过 SSH 执行远程命令、编辑和写入文件 |
@@ -60,12 +60,11 @@ pi-workflow/
     ├── cortexkit/
     │   ├── magic-context.jsonc      # 仅当前会话压缩的配置
     │   └── magic-context-compression-only.md # 自定义上下文管理规则
-    ├── pi-search/config.example.json # 脱敏搜索配置示例
     └── mcp/mcp.example.json          # MCP 服务配置示例
 ```
 
 ## 分享范围
 
-保留插件来源与版本、本地工具开关扩展、Pi 和插件的个性化配置，以及搜索、MCP 的脱敏示例。普通插件不复制安装目录。
+保留插件来源与版本、本地工具开关扩展、Pi 和插件的个性化配置，以及 MCP 配置示例。普通插件不复制安装目录。Parallel 使用 Pi 的认证存储或环境变量，不附带独立搜索配置文件。
 
 不包含个人模型供应商配置、API Key、登录凭据、SSH 密钥、会话及其导出文件、日志、缓存、数据库、浏览器登录数据或已安装依赖。

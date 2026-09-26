@@ -19,7 +19,6 @@ models-store.json
 mcp-oauth/
 mcp-oauth-encrypted/
 tokens.json
-/config/pi-search/config.json
 /config/mcp/mcp.json
 /agent/mcp.json
 
@@ -31,7 +30,6 @@ logs/
 *.sqlite*
 *.db*
 .cache/
-context7-cache/
 mcp-cache.json
 mcp-npx-cache.json
 mcp-onboarding.json
