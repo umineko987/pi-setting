@@ -6,6 +6,7 @@
   },
   "historian": {
     "pi": {
+      "model": "openai-codex/gpt-6-luna",
       "thinking_level": "max"
     }
   },
