@@ -20,6 +20,7 @@
     "todowrite",
     "ssh_bash",
     "ssh_edit",
-    "ssh_write"
+    "ssh_write",
+    "ssh_read"
   ]
 }
