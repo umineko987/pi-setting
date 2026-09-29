@@ -9,7 +9,8 @@
     "npm:pi-mcp-adapter@2.37.0",
     "npm:@ogulcancelik/pi-ssh-tools@0.1.6",
     "npm:pi-hashline-edit-pro@4.4.1",
-    "npm:@cortexkit/pi-magic-context@0.43.1"
+    "npm:@cortexkit/pi-magic-context@0.43.1",
+    "npm:pi-workspace-history@0.4.3"
   ],
   "defaultThinkingLevel": "xhigh",
   "tuiMode": "regular",
