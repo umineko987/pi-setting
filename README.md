@@ -12,6 +12,8 @@
 - **思考与重试**：[`settings.json`](agent/settings.json) 中默认思考等级为 `xhigh`，显示思考内容，并启用自动重试。
 - **上下文管理**：保留当前会话压缩与恢复，关闭持久记忆、自动记忆搜索与提升、Git 提交索引、dreamer、sidekick 和 embedding；另有[自定义行为说明](config/cortexkit/magic-context-compression-only.md)约束其使用范围。
 - **代码原则**：[`APPEND_SYSTEM.md`](agent/APPEND_SYSTEM.md) 强调“少即是多、如无必要勿增实体”，优先修改现有代码，只实现当前需求，测试聚焦核心行为与必要回归。
+- **开发记录边界**：仅在用户明确确认开发完成并要求时更新 README；长期有效的项目约束按需维护在 `AGENTS.md`，本轮待办使用任务列表，确需跨会话保存时才使用 Issue 或 `TODO.md`。
+- **工作区回退**：`pi-workspace-history` 保存工作区快照，支持撤销、重做和手动检查点；历史导航可选择恢复文件或只回退对话，不回退 Git 提交历史。
 
 ## Pi 插件
 
@@ -26,6 +28,7 @@
 | `@ogulcancelik/pi-ssh-tools` | `0.1.6` | 通过 SSH 执行远程命令、编辑和写入文件 |
 | `pi-hashline-edit-pro` | `4.4.1` | 基于行锚点读取、编辑、搜索文件，并支持撤销修改 |
 | `@cortexkit/pi-magic-context` | `0.43.1` | 当前会话的上下文压缩与恢复；本工作流不启用持久记忆 |
+| [`pi-workspace-history`](https://github.com/wcldyx/pi-workspace-history) | `0.4.3` | 工作区快照、撤销/重做和手动检查点，联动历史树导航 |
 
 ## 本地扩展
 
@@ -49,7 +52,7 @@ pi-workflow/
 ├── agent/
 │   ├── settings.json                # Pi 设置与插件版本
 │   ├── keybindings.json             # 快捷键
-│   ├── APPEND_SYSTEM.md             # 代码原则与工具使用偏好
+│   ├── APPEND_SYSTEM.md             # 代码原则、开发记录边界与工具偏好
 │   ├── tool-selection.json          # 全局工具选择
 │   ├── extensions/
 │   │   ├── tools.ts                 # 工具开关扩展
@@ -67,4 +70,4 @@ pi-workflow/
 
 保留插件来源与版本、本地工具开关扩展、Pi 和插件的个性化配置，以及 MCP 配置示例。普通插件不复制安装目录。Parallel 使用 Pi 的认证存储或环境变量，不附带独立搜索配置文件。
 
-不包含个人模型供应商配置、API Key、登录凭据、SSH 密钥、会话及其导出文件、日志、缓存、数据库、浏览器登录数据或已安装依赖。
+不包含个人模型供应商配置、API Key、登录凭据、SSH 密钥、会话及其导出文件、工作区快照、日志、缓存、数据库、浏览器登录数据或已安装依赖。
