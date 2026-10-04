@@ -1,12 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/cortexkit/magic-context/master/assets/magic-context.schema.json",
   "enabled": true,
+  "todowrite": {
+    "enabled": true,
+    "overlay": true
+  },
   "compaction": {
     "enabled": true
   },
   "historian": {
     "pi": {
-      "model": "openai-codex/gpt-6-luna",
+      "model": "zai-coding-cn/glm-5.3-flash",
       "thinking_level": "max"
     }
   },
@@ -24,12 +28,8 @@
     "disable": true,
     "inject_docs": false,
     "tasks": {
-      "review-user-memories": {
-        "schedule": ""
-      },
-      "promote-primers": {
-        "schedule": ""
-      }
+      "review-user-memories": { "schedule": "" },
+      "promote-primers": { "schedule": "" }
     }
   },
   "prompt_surface": {

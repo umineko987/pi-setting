@@ -5,6 +5,7 @@
     "bash",
     "write",
     "replace",
+    "replace_within",
     "insert",
     "anchor_grep",
     "undo_last_change",
@@ -18,9 +19,6 @@
     "ctx_expand",
     "ctx_reduce",
     "todowrite",
-    "ssh_bash",
-    "ssh_edit",
-    "ssh_write",
-    "ssh_read"
+    "mcp__fast_context"
   ]
 }
