@@ -5,7 +5,7 @@
     "bash",
     "write",
     "replace",
-    "replace_within",
+    "replace_match",
     "insert",
     "anchor_grep",
     "undo_last_change",
@@ -14,11 +14,9 @@
     "web_search",
     "web_fetch",
     "web_research",
-    "mcp",
-    "mcpScript",
     "ctx_expand",
     "ctx_reduce",
     "todowrite",
-    "mcp__fast_context"
+    "tool_search"
   ]
 }

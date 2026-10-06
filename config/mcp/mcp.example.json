@@ -6,7 +6,11 @@
         "-y",
         "@sammysnake/fast-context-mcp@1.3.2"
       ],
-      "lifecycle": "lazy"
+      "exposure": "deferred",
+      "toolExposure": {
+        "extract_windsurf_key": "hidden"
+      },
+      "description": "按语义搜索代码库，定位相关文件和调用链"
     },
     "playwright": {
       "command": "npx",
@@ -15,7 +19,8 @@
         "@playwright/mcp@0.0.82",
         "--extension"
       ],
-      "lifecycle": "lazy"
+      "exposure": "deferred",
+      "description": "浏览器自动化、网页交互与页面检查"
     }
   }
 }

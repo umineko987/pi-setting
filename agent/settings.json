@@ -1,7 +1,7 @@
 {
   "theme": "wallpaper-dark",
   "defaultTools": [
-    "+replace_within"
+    "+replace_match"
   ],
   "packages": [
     "npm:pi-supergsd@0.2.10",
@@ -9,9 +9,8 @@
     "npm:@juicesharp/rpiv-i18n@2.12.0",
     "npm:@parallel-web/pi-extension@1.3.0",
     "npm:pi-token-stats@0.1.1",
-    "npm:pi-mcp-adapter@5.0.0",
     "npm:@ogulcancelik/pi-ssh-tools@0.1.6",
-    "npm:pi-hashline-edit-pro@5.1.0",
+    "npm:pi-hashline-edit-pro@6.1.2",
     "npm:@cortexkit/pi-magic-context@0.44.4"
   ],
   "defaultThinkingLevel": "max",
@@ -32,8 +31,5 @@
   },
   "piSupergsd": {
     "defaultTaskThinkingLevel": "max"
-  },
-  "extensions": [
-    "-builtin:mcp"
-  ]
+  }
 }
