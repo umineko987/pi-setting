@@ -10,7 +10,6 @@
   },
   "historian": {
     "pi": {
-      "model": "zai-coding-cn/glm-5.3-flash",
       "thinking_level": "max"
     }
   },

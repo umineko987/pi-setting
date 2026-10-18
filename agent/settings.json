@@ -5,15 +5,14 @@
   ],
   "packages": [
     "npm:pi-supergsd@0.2.10",
-    "npm:@juicesharp/rpiv-ask-user-question@2.12.0",
-    "npm:@juicesharp/rpiv-i18n@2.12.0",
+    "npm:@juicesharp/rpiv-ask-user-question@2.13.9",
+    "npm:@juicesharp/rpiv-i18n@2.13.9",
     "npm:@parallel-web/pi-extension@1.3.0",
     "npm:pi-token-stats@0.1.1",
-    "npm:@ogulcancelik/pi-ssh-tools@0.1.6",
-    "npm:pi-hashline-edit-pro@6.1.2",
-    "npm:@cortexkit/pi-magic-context@0.44.4"
+    "npm:pi-hashline-edit-pro@6.4.7",
+    "npm:@cortexkit/pi-magic-context@0.49.10"
   ],
-  "defaultThinkingLevel": "max",
+  "defaultThinkingLevel": "xhigh",
   "tuiMode": "regular",
   "fullscreenScrollbar": "auto",
   "retry": {
@@ -30,6 +29,6 @@
     "enabled": true
   },
   "piSupergsd": {
-    "defaultTaskThinkingLevel": "max"
+    "defaultTaskThinkingLevel": "xhigh"
   }
 }

@@ -19,6 +19,9 @@
         "@playwright/mcp@0.0.82",
         "--extension"
       ],
+      "env": {
+        "PLAYWRIGHT_MCP_EXECUTABLE_PATH": "/usr/bin/chromium"
+      },
       "exposure": "deferred",
       "description": "浏览器自动化、网页交互与页面检查"
     }
